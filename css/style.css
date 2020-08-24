@@ -1,0 +1,73 @@
+.opacity-0 {
+  opacity: 0 !important;
+}
+.opacity-1 {
+  opacity: 0.2 !important;
+}
+.opacity-2 {
+  opacity: 0.4 !important;
+}
+.opacity-3 {
+  opacity: 0.6 !important;
+}
+.opacity-4 {
+  opacity: 0.8 !important;
+}
+.opacity-5 {
+  opacity: 1 !important;
+}
+
+/* Maybe even support hover opacity shifts */
+.opacity-0h5 {
+  opacity: 0 !important;
+  transition: opacity 0.25s ease-in-out !important;
+  -moz-transition: opacity 0.25s ease-in-out !important;
+  -webkit-transition: opacity 0.25s ease-in-out !important;
+}
+.opacity-0h5:hover {
+  opacity: 1 !important;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #000 !important;
+}
+
+.checkboxList > input:checked {
+  border: 1px solid #000;
+  background-color: #000;
+}
+
+.checkboxList > input:checked + label::before {
+  content: "\2713";
+  text-align: center;
+  color: #fff;
+  position: relative;
+  left: -1.2rem;
+  top: -0.3rem;
+}
+
+.checkboxList > input {
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #000;
+  cursor: pointer;
+}
+
+[type="text"]:focus {
+  outline: none;
+}
+
+#btn_next,
+#btn_prev {
+  color: #000;
+  font-size: xx-large;
+  font-weight: bolder;
+}
